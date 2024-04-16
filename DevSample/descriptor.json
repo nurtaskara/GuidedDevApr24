@@ -1,0 +1,17 @@
+﻿{
+  "Descriptor": {
+    "UId": "f4a45ba7-bb5a-0832-ec81-bc066d69d801",
+    "Name": "DevSample",
+    "Type": 1,
+    "ModifiedOnUtc": "\/Date(1713292349000)\/",
+    "Maintainer": "Customer",
+    "ProjectPath": "Files/DevSample.csproj",
+    "DependsOn": [
+      {
+        "UId": "fe1effeb-74f2-42c5-b5e1-dfe0313b86bf",
+        "PackageVersion": "7.8.0",
+        "Name": "Studio"
+      }
+    ]
+  }
+}
