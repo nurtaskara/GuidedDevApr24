@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "0107b46d-31e0-4a3e-bcf7-e238ec673213",
+    "Name": "UsrRealtyConvertedRelatedPage",
+    "ModifiedOnUtc": "\/Date(1713801911000)\/",
+    "ManagerName": "AddonSchemaManager",
+    "Caption": "Realty Converted (Page settings)",
+    "DependsOn": []
+  }
+}

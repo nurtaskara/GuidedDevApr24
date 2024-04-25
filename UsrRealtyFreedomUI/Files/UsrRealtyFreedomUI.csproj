@@ -316,6 +316,11 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
+		<Reference Include="DevSample">
+			<HintPath>$(RelativePkgFolderPath)/DevSample/$(StandalonePackageAssemblyPath)/DevSample.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
 		<Reference Include="CrtBaseConsts">
 			<HintPath>$(RelativePkgFolderPath)/CrtBaseConsts/$(StandalonePackageAssemblyPath)/CrtBaseConsts.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
@@ -366,23 +371,18 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtML">
-			<HintPath>$(RelativePkgFolderPath)/CrtML/$(StandalonePackageAssemblyPath)/CrtML.dll</HintPath>
-			<SpecificVersion>False</SpecificVersion>
-			<Private>False</Private>
-		</Reference>
 		<Reference Include="CrtCalendar">
 			<HintPath>$(RelativePkgFolderPath)/CrtCalendar/$(StandalonePackageAssemblyPath)/CrtCalendar.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtEmailTemplate">
-			<HintPath>$(RelativePkgFolderPath)/CrtEmailTemplate/$(StandalonePackageAssemblyPath)/CrtEmailTemplate.dll</HintPath>
+		<Reference Include="CrtML">
+			<HintPath>$(RelativePkgFolderPath)/CrtML/$(StandalonePackageAssemblyPath)/CrtML.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtWebhookServiceBase">
-			<HintPath>$(RelativePkgFolderPath)/CrtWebhookServiceBase/$(StandalonePackageAssemblyPath)/CrtWebhookServiceBase.dll</HintPath>
+		<Reference Include="CrtEmailTemplate">
+			<HintPath>$(RelativePkgFolderPath)/CrtEmailTemplate/$(StandalonePackageAssemblyPath)/CrtEmailTemplate.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -396,8 +396,8 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="XSSProtection">
-			<HintPath>$(RelativePkgFolderPath)/XSSProtection/$(StandalonePackageAssemblyPath)/XSSProtection.dll</HintPath>
+		<Reference Include="CrtWebhookServiceBase">
+			<HintPath>$(RelativePkgFolderPath)/CrtWebhookServiceBase/$(StandalonePackageAssemblyPath)/CrtWebhookServiceBase.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -411,8 +411,8 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtNextStep">
-			<HintPath>$(RelativePkgFolderPath)/CrtNextStep/$(StandalonePackageAssemblyPath)/CrtNextStep.dll</HintPath>
+		<Reference Include="CSP">
+			<HintPath>$(RelativePkgFolderPath)/CSP/$(StandalonePackageAssemblyPath)/CSP.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -421,8 +421,8 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CSP">
-			<HintPath>$(RelativePkgFolderPath)/CSP/$(StandalonePackageAssemblyPath)/CSP.dll</HintPath>
+		<Reference Include="CrtNextStep">
+			<HintPath>$(RelativePkgFolderPath)/CrtNextStep/$(StandalonePackageAssemblyPath)/CrtNextStep.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -438,6 +438,11 @@
 		</Reference>
 		<Reference Include="CrtUISwitcher">
 			<HintPath>$(RelativePkgFolderPath)/CrtUISwitcher/$(StandalonePackageAssemblyPath)/CrtUISwitcher.dll</HintPath>
+			<SpecificVersion>False</SpecificVersion>
+			<Private>False</Private>
+		</Reference>
+		<Reference Include="XSSProtection">
+			<HintPath>$(RelativePkgFolderPath)/XSSProtection/$(StandalonePackageAssemblyPath)/XSSProtection.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -461,13 +466,13 @@
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtCall">
-			<HintPath>$(RelativePkgFolderPath)/CrtCall/$(StandalonePackageAssemblyPath)/CrtCall.dll</HintPath>
+		<Reference Include="CrtC360InUiV2">
+			<HintPath>$(RelativePkgFolderPath)/CrtC360InUiV2/$(StandalonePackageAssemblyPath)/CrtC360InUiV2.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
-		<Reference Include="CrtC360InUiV2">
-			<HintPath>$(RelativePkgFolderPath)/CrtC360InUiV2/$(StandalonePackageAssemblyPath)/CrtC360InUiV2.dll</HintPath>
+		<Reference Include="CrtCall">
+			<HintPath>$(RelativePkgFolderPath)/CrtCall/$(StandalonePackageAssemblyPath)/CrtCall.dll</HintPath>
 			<SpecificVersion>False</SpecificVersion>
 			<Private>False</Private>
 		</Reference>
@@ -477,6 +482,7 @@
 		<Compile Remove="$(RelativePkgFolderPath)/UsrRealtyFreedomUI/Schemas/UsrRealtyFreedomUI/UsrRealtyFreedomUI.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrRealtyFreedomUI/Schemas/UsrRealtyFreedomUI/UsrRealtyFreedomUI.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrRealtyFreedomUI/Schemas/UsrRealtyOfferTypeFreedomUI/UsrRealtyOfferTypeFreedomUI.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrRealtyFreedomUI/Schemas/UsrRealtyOfferTypeFreedomUI/UsrRealtyOfferTypeFreedomUI.cs')" />
 		<Compile Remove="$(RelativePkgFolderPath)/UsrRealtyFreedomUI/Schemas/UsrRealtyTypeFreedomUI/UsrRealtyTypeFreedomUI.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrRealtyFreedomUI/Schemas/UsrRealtyTypeFreedomUI/UsrRealtyTypeFreedomUI.cs')" />
+		<Compile Remove="$(RelativePkgFolderPath)/UsrRealtyFreedomUI/Schemas/UsrRealtyVisitFreedomUI/UsrRealtyVisitFreedomUI.cs" Condition="Exists('$(RelativePkgFolderPath)/UsrRealtyFreedomUI/Schemas/UsrRealtyVisitFreedomUI/UsrRealtyVisitFreedomUI.cs')" />
 	</ItemGroup>
 	<ItemGroup Label="3rd Party References"></ItemGroup>
 	<Target Name="Paths" BeforeTargets="BeforeCompile">

@@ -3,6 +3,7 @@
 	<Group Type="String">
 		<Items>
 			<Item Name="Caption" Value="Realty FreedomUI list page" />
+			<Item Name="LocalizableStrings.Button_u1r8qyk_caption.Value" Value="Add visits" />
 		</Items>
 	</Group>
 </Resources>

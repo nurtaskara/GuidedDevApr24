@@ -1,0 +1,14 @@
+﻿{
+  "Descriptor": {
+    "UId": "137982ae-1997-479b-b59a-d1ec95ceec48",
+    "Name": "UsrRealtyClassicFile",
+    "ModifiedOnUtc": "\/Date(1713785564000)\/",
+    "Parent": {
+      "UId": "556c5867-60a7-4456-aae1-a57a122bef70",
+      "Name": "File"
+    },
+    "ManagerName": "EntitySchemaManager",
+    "Caption": "Realty Classic attachment",
+    "DependsOn": []
+  }
+}

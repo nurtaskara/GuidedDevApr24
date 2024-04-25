@@ -5,6 +5,24 @@
 			<Item Name="Caption" Value="Realty FreedomUI form page" />
 			<Item Name="LocalizableStrings.addRecord_26fywmv_caption.Value" Value="Add new" />
 			<Item Name="LocalizableStrings.addRecord_6vzk76g_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_io33n04_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_lw0gebn_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.addRecord_ze9tans_caption.Value" Value="Add new" />
+			<Item Name="LocalizableStrings.AreaCannotBeLess.Value" Value="Area cannot be less than 200 sq ft" />
+			<Item Name="LocalizableStrings.Button_fy0tc91_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.Button_kym699e_caption.Value" Value="Button" />
+			<Item Name="LocalizableStrings.Button_mpwet4l_caption.Value" Value="Push me!" />
+			<Item Name="LocalizableStrings.ExpansionPanel_8fwqe3f_title.Value" Value="Realty Visit (FreedomUI)" />
+			<Item Name="LocalizableStrings.GridDetailAddBtn_qul9sis_caption.Value" Value="New" />
+			<Item Name="LocalizableStrings.GridDetailExportDataBtn_xmg6o3g_caption.Value" Value="Export to Excel" />
+			<Item Name="LocalizableStrings.GridDetailImportDataBtn_gu4m6vp_caption.Value" Value="Data import" />
+			<Item Name="LocalizableStrings.GridDetailRefreshBtn_vwdw8cs_caption.Value" Value="Refresh" />
+			<Item Name="LocalizableStrings.GridDetailSearchFilter_cd092bh_placeholder.Value" Value="Search" />
+			<Item Name="LocalizableStrings.GridDetailSettingsBtn_digjz9p_caption.Value" Value="Actions" />
+			<Item Name="LocalizableStrings.MenuItem_rya7w3t_caption.Value" Value="Calculate average price" />
+			<Item Name="LocalizableStrings.MenuItem_ss35lca_caption.Value" Value="Add visits" />
+			<Item Name="LocalizableStrings.NumberInput_co0btf6_label.Value" Value="Number" />
+			<Item Name="LocalizableStrings.PriceCannotBeLess.Value" Value="Price cannot be less than 50$" />
 		</Items>
 	</Group>
 </Resources>
