@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "2398de7b-219e-469a-ad5e-bbe4a5f00791",
+    "Name": "UsrGoldPriceService",
+    "ModifiedOnUtc": "\/Date(1714398043000)\/",
+    "ManagerName": "ServiceSchemaManager",
+    "Caption": "https://api.nationalize.io",
+    "DependsOn": []
+  }
+}

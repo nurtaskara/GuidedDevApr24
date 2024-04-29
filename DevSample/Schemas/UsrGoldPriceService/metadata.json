@@ -1,0 +1,90 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ServiceSchemaManager",
+      "UId": "2398de7b-219e-469a-ad5e-bbe4a5f00791",
+      "A2": "UsrGoldPriceService",
+      "A5": "f925110e-f006-42fe-9227-9d1855cfc374",
+      "B1": [],
+      "B2": [],
+      "B3": [],
+      "B6": "f4a45ba7-bb5a-0832-ec81-bc066d69d801",
+      "B8": "8.1.2.3842",
+      "IQ1": "https://api.nationalize.io",
+      "IQ2": 1,
+      "IQ7": [],
+      "IQ4": [
+        {
+          "UId": "3e233046-349c-4d73-80a2-0ab217b00149",
+          "A2": "UsrGetPrices",
+          "A3": "2398de7b-219e-469a-ad5e-bbe4a5f00791",
+          "A4": "2398de7b-219e-469a-ad5e-bbe4a5f00791",
+          "IR3": 5000,
+          "IR5": "null",
+          "IR1": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "46dafc96-1e1f-4d56-8214-6e0663c0c145",
+                "A2": "UsrName",
+                "IU1": "name",
+                "IU2": "Text",
+                "IU8": "item",
+                "IU4": 3,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": []
+              }
+            ],
+            "IT2": 1,
+            "IT1": "/"
+          },
+          "IR2": {
+            "IW2": 1,
+            "IW1": [
+              {
+                "UId": "6e4b2494-0b21-4b47-b2ea-d287f6d7d484",
+                "A2": "UsrCountry",
+                "IU1": "$.country",
+                "IU2": "Object",
+                "IU3": true,
+                "IU8": "item",
+                "IU4": 1,
+                "IU5": {
+                  "IV1": "null"
+                },
+                "IU6": [
+                  {
+                    "UId": "c503941b-d501-4983-8549-506a98832de9",
+                    "A2": "UsrCCountryid",
+                    "IU1": "country_id",
+                    "IU2": "Text",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  },
+                  {
+                    "UId": "658686ae-ba9e-40cf-bd72-9c8bae1b371c",
+                    "A2": "UsrCProbability",
+                    "IU1": "probability",
+                    "IU2": "Integer",
+                    "IU8": "item",
+                    "IU4": 1,
+                    "IU5": {
+                      "IV1": "null"
+                    },
+                    "IU6": []
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

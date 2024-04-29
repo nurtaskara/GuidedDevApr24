@@ -1,4 +1,4 @@
-define("UsrRealtyClassic1Page", [], function() {
+define("UsrRealtyClassic1Page", ["ServiceHelper"], function(ServiceHelper) {
 	return {
 		entitySchemaName: "UsrRealtyClassic",
 		attributes: {},
@@ -17,8 +17,32 @@ define("UsrRealtyClassic1Page", [], function() {
 		methods: {
 			onMyButtonClick: function(){
 				this.console.log("Button works!");
+			},
+			onRunWebServiceButtonClick: function() {
+				var typeObject = this.get("UsrType");
+				if (!typeObject) {
+					return;
+				}
+				var typeId = typeObject.value;
+				var offerTypeObject = this.get("UsrOfferType");
+				if (!offerTypeObject) {
+					return;
+				}
+				var offerTypeId = offerTypeObject.value;
+				var params = {
+					realtyTypeId: typeId,
+					realtyOfferTypeId: offerTypeId,
+					entityName: "UsrRealtyClassic"
+				};				
+				this.console.log("1");
+				ServiceHelper.callService("RealtyService", "GetMaxPriceByTypeId", this.getWebServiceResult, params, this);
+				this.console.log("2");
+			},
+			getWebServiceResult: function(response, success) {
+				this.console.log("3");
+				this.Terrasoft.showInformation("Max price: " + response.GetMaxPriceByTypeIdResult + ", success: " + success);
 			}
-		},
+        },
 		dataModels: /**SCHEMA_DATA_MODELS*/{}/**SCHEMA_DATA_MODELS*/,
 		diff: /**SCHEMA_DIFF*/[
 			{
@@ -75,18 +99,13 @@ define("UsrRealtyClassic1Page", [], function() {
 				"propertyName": "items",
 				"index": 2
 			},
-	
-            {
+	          {
                 /*  Run the operation that inserts the element to the page. */
-                "operation": "insert",
-                /* The meta name of the parent container to add the button. */
-                "parentName": "ProfileContainer",
-                /* Add the button to the element collection of the parent element. */
-                "propertyName": "items",
-                /* The meta name of the added button. */
-                "name": "MyButton",
-                /* The properties to pass to the element’s constructor. */
-                "values": {
+               "operation": "insert",
+               "parentName": "ProfileContainer",
+               "propertyName": "items",
+               "name": "MyButton",
+               "values": {
 					"layout": {
 						"colSpan": 10,
 						"rowSpan": 1,
@@ -94,14 +113,34 @@ define("UsrRealtyClassic1Page", [], function() {
 						"row": 3,
 						"layoutName": "ProfileContainer"
 					},
-                    /* Set the type of the added element to ‘button.’ */
-                    "itemType": Terrasoft.ViewItemType.BUTTON,
-                    /* Bind the button title to the localizable schema string. */
-                    "caption": {bindTo: "Resources.Strings.MyButtonCaption"},
+                  "itemType": Terrasoft.ViewItemType.BUTTON,
+                  "caption": {bindTo: "Resources.Strings.MyButtonCaption"},
                     /* Bind the button click handler method. */
                     "click": {bindTo: "onMyButtonClick"},
                     /* The display style of the button. */
                     "style": Terrasoft.controls.ButtonEnums.style.BLUE
+                }
+            },
+            {
+                /*  Run the operation that inserts the element to the page. */
+               "operation": "insert",
+               "parentName": "ProfileContainer",
+               "propertyName": "items",
+               "name": "RunWebServiceButton",
+               "values": {
+					"layout": {
+						"colSpan": 14,
+						"rowSpan": 1,
+						"column": 10,
+						"row": 3,
+						"layoutName": "ProfileContainer"
+					},
+                  "itemType": Terrasoft.ViewItemType.BUTTON,
+                  "caption": {bindTo: "Resources.Strings.RunWebServiceButtonCaption"},
+                    /* Bind the button click handler method. */
+                    "click": {bindTo: "onRunWebServiceButtonClick"},
+                    /* The display style of the button. */
+                    "style": Terrasoft.controls.ButtonEnums.style.RED
                 }
             },
   
@@ -110,9 +149,9 @@ define("UsrRealtyClassic1Page", [], function() {
 				"name": "LOOKUP80d222ab-9064-4091-b114-a9607c004c42",
 				"values": {
 					"layout": {
-						"colSpan": 12,
+						"colSpan": 14,
 						"rowSpan": 1,
-						"column": 0,
+						"column": 10,
 						"row": 0,
 						"layoutName": "Header"
 					},

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="https://api.nationalize.io" />
+			<Item Name="ServiceMethods.UsrGetPrices.Caption" Value="https://api.nationalize.io/?name=nathaniel" />
+			<Item Name="ServiceMethods.UsrGetPrices.Request.Parameters.UsrName.Caption" Value="Name" />
+			<Item Name="ServiceMethods.UsrGetPrices.Response.Parameters.UsrCountry.Caption" Value="Country" />
+			<Item Name="ServiceMethods.UsrGetPrices.Response.Parameters.UsrCountry.ItemProperties.UsrCCountryid.Caption" Value="Country_id" />
+			<Item Name="ServiceMethods.UsrGetPrices.Response.Parameters.UsrCountry.ItemProperties.UsrCProbability.Caption" Value="Probability" />
+		</Items>
+	</Group>
+</Resources>
